@@ -18,7 +18,7 @@ def getNoOfCommits(user_id, repo_name):
 def getGitRepoInfo(user_id):
     if not isinstance(user_id, str):
         return "User ID is not valid"
-    repo_url = f"https://api.github.com/users/{user_id}/repos"
+    repo_url = "https://api.github.com/users/" + user_id + "/repos"
     repo_data = requests.get(repo_url)
     repo_data = json.loads(repo_data.text)
     repo_names = []
