@@ -8,7 +8,7 @@ import json
 
 
 def getNoOfCommits(user_id, repo_name):
-    commit_url = f"https://api.github.com/repos/{user_id}/{repo_name}/commits"
+    commit_url = "https://api.github.com/repos/" + user_id + "/" + repo_name + "/commits" 
     commits = requests.get(commit_url)
     commits = json.loads(commits.text)
     print("Repo:", repo_name, '  Number of commits:', len(commits))
