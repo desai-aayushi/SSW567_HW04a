@@ -11,7 +11,7 @@ class TestGitInfo(unittest.TestCase):
 
     def test_gitRepos(self):
         self.assertListEqual(getGitRepoInfo("desai-aayushi"),
-                             ["dbmsproject", "LT_Project", "SSW567_HW00_HelloWorld", "SSW567_HW02a"])
+                             ["dbmsproject", "LT_Project", "SSW567_HW00_HelloWorld", "SSW567_HW02a","SSW567_HW04a"])
 
 
 if __name__ == '__main__':
